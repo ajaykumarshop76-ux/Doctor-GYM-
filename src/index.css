@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Space Grotesk', 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  
+  /* Override amber with brand's Elegant Gold color values */
+  --color-amber-300: #e5cd9c;
+  --color-amber-400: #d6b77c;
+  --color-amber-500: #C5A059;
+  --color-amber-600: #b18c46;
+  --color-amber-700: #937134;
+  --color-amber-800: #5c431b;
+  --color-amber-900: #32230b;
+  
+  --color-gold: #C5A059;
+  --color-gold-hover: #b18c46;
+  --color-gold-light: #e5cd9c;
+  --color-premium-dark: #0a0a0a;
+}
+
+/* Base custom text outline styling */
+.text-outline-gold {
+  color: transparent;
+  -webkit-text-stroke: 1px #C5A059;
+}
+
+/* Custom Webkit scrollbar for premium dark appearance */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1c1917;
+  border-radius: 4px;
+  border: 1px solid rgba(197, 160, 89, 0.25);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A059;
+}
+
+/* Base custom animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scroller-hide::-webkit-scrollbar {
+  display: none;
+}
+.scroller-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

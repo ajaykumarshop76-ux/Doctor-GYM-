@@ -1,0 +1,6 @@
+{
+  "name": "Doctor GYM - Vedant Fitness Club",
+  "description": "Premium Gym and Fitness Club website for Doctor GYM Gota, Ahmedabad. View flexible memberships, explore our modern gym equipment, trainers, and media gallery, read user reviews, and book a free trial.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
